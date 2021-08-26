@@ -14,9 +14,24 @@ function Navbar({ title, logoSrc, titleColor, navBorder, navColor }) {
             </div>
             {title && <Title titleColor={titleColor}>{title}</Title>}
             <NavbarButtons>
-                <Button label="Login" />
-                <Button type="primary-outline" type="primary" label="Register" />
-                <Button type="secondary" label="Contact Us" />
+                <Button
+                    label="Login"
+                    type={colors.primary["500"]}
+                    txt={colors.neutral["50"]}
+                    bd={colors.primary["500"]}
+                />
+                <Button
+                    label="Register"
+                    type={colors.primary["500"]}
+                    txt={colors.neutral["50"]}
+                    bd={colors.primary["500"]}
+                />
+                <Button
+                    label="Contact Us"
+                    type={colors.secondary["500"]}
+                    txt={colors.neutral["50"]}
+                    bd={colors.secondary["500"]}
+                />
             </NavbarButtons>
             {/* <div className="navbar__right--mobile">
                 <MenuIcon />

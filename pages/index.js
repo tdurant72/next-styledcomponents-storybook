@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import Button from '../components/Button';
+import { colors } from '../styles/ColorStyles';
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -50,6 +51,7 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <Button bg={colors.secondary["500"]} txt={colors.neutral["50"]} bd={colors.secondary["700"]}>Button</Button>
       </main>
 
       <footer className={styles.footer}>
